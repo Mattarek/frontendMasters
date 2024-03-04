@@ -8,13 +8,13 @@
 
 :root {
     --default-font-size: 15px;
-    --prim-dark-blue: hsl(233, 47%, 7%);
+    --primary-dark-blue: hsl(233, 47%, 7%);
     --primary-blue: hsl(244, 38%, 16%);
-    --prim-violet: hsl(277, 64%, 61%);
+    --primary-violet: hsl(277, 64%, 61%);
 
     --text-white: hsl(0, 0%, 100%);
-    --neu-trans-white: hsla(0, 0%, 100%, 0.75);
-    --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
+    --text-grey-opacity-075: hsla(0, 0%, 100%, 0.75);
+    --text-grey-opacity-06: hsla(0, 0%, 100%, 0.6);
 
     --bg-violet: hsl(277deg, 100%, 50%, 0.42);
     --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
@@ -26,7 +26,7 @@ body {
     font-size: var(--default-font-size);
     place-items: center;
 
-    background-color: var(--prim-dark-blue);
+    background-color: var(--primary-dark-blue);
     color: var(--text-white);
 
     min-height: 100vh;
@@ -57,7 +57,7 @@ section h1 {
 }
 
 section h1 span {
-    color: var(--prim-violet);
+    color: var(--primary-violet);
 }
 
 section .content {
@@ -65,7 +65,7 @@ section .content {
 }
 
 section .lead {
-    color: var(--neu-trans-white);
+    color: var(--text-grey-opacity-075);
     line-height: 1.5em;
     margin-bottom: 5em;
 }
@@ -84,7 +84,7 @@ section ul h2 {
 
 section ul p {
     font-family: 'Lexend Deca', sans-serif;
-    color: var(--neu-more-trans-white);
+    color: var(--text-grey-opacity-06);
     text-transform: uppercase;
     font-size: 0.75rem;
 }
@@ -98,15 +98,4 @@ section ul p {
     background-size: cover;
     border-radius: 0 10px 10px 0;
     overflow: hidden;
-}
-
-.overlay {
-    background: var(--bg-violet);
-    height: 100%;
-}
-
-.overlay-2 {
-    background: var(--bg-light-violet);
-    height: 100%;
-    mix-blend-mode: color-burn;
 }
