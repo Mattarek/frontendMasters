@@ -26,7 +26,7 @@ body {
     font-size: var(--default-font-size);
     place-items: center;
 
-    background-color: var(--primary-blue);
+    background-color: var(--prim-dark-blue);
     color: var(--text-white);
 
     min-height: 100vh;
@@ -37,6 +37,56 @@ main {
     min-width: 600px;
     z-index: 1;
     margin: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 5.85em 7em 5.85em 5.85em;
+    width: 570px;
+    min-width: 300px;
+    background: var(--primary-blue);
+    border-radius: 10px 0 0 10px;
+}
+
+section h1 {
+    color: var(--neu-white);
+    font-size: 2.25rem;
+    margin-bottom: 0.75em;
+    font-weight: 700;
+}
+
+section h1 span {
+    color: var(--prim-violet);
+}
+
+section .content {
+    margin-right: 2em;
+}
+
+section .lead {
+    color: var(--neu-trans-white);
+    line-height: 1.5em;
+    margin-bottom: 5em;
+}
+
+section ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+section ul h2 {
+    color: var(--neu-white);
+    margin-bottom: 0.3em;
+}
+
+section ul p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--neu-more-trans-white);
+    text-transform: uppercase;
+    font-size: 0.75rem;
 }
 
 .bg-img {
