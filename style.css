@@ -23,10 +23,40 @@
 body {
     display: grid;
     font-family: 'Inter', sans-serif;
+    font-size: var(--default-font-size);
     place-items: center;
 
     background-color: var(--primary-blue);
     color: var(--text-white);
 
     min-height: 100vh;
+}
+
+main {
+    display: flex;
+    min-width: 600px;
+    z-index: 1;
+    margin: 1em;
+}
+
+.bg-img {
+    min-height: 10em;
+    width: 540px;
+    min-width: 200px;
+    background: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.overlay {
+    background: var(--bg-violet);
+    height: 100%;
+}
+
+.overlay-2 {
+    background: var(--bg-light-violet);
+    height: 100%;
+    mix-blend-mode: color-burn;
 }
